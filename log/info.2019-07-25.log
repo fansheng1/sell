@@ -1,0 +1,455 @@
+logbak: 2019-07-25 13:40:42.936 com.lst.SellApplication - Starting SellApplication on USER-20090702DC with PID 5032 (D:\sell\target\classes started by Administrator in D:\sell)
+logbak: 2019-07-25 13:40:42.938 com.lst.SellApplication - The following profiles are active: dev
+logbak: 2019-07-25 13:40:44.048 o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.lst]' package. Please check your configuration.
+logbak: 2019-07-25 13:40:44.094 o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+logbak: 2019-07-25 13:40:44.094 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+logbak: 2019-07-25 13:40:44.104 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 5ms. Found 0 repository interfaces.
+logbak: 2019-07-25 13:40:44.114 o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+logbak: 2019-07-25 13:40:44.115 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+logbak: 2019-07-25 13:40:44.123 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
+logbak: 2019-07-25 13:40:44.475 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1d788e33] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+logbak: 2019-07-25 13:40:44.781 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+logbak: 2019-07-25 13:40:44.793 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+logbak: 2019-07-25 13:40:44.800 o.a.catalina.core.StandardService - Starting service [Tomcat]
+logbak: 2019-07-25 13:40:44.800 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+logbak: 2019-07-25 13:40:44.805 o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\Java\jdk1.8.0_171\jre\bin;D:\Program Files\Git\cmd;D:\apache-maven-3.6.1\bin;D:\Program Files\nodejs\;D:\Program Files\erl9.3\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Administrator\AppData\Roaming\npm;.]
+logbak: 2019-07-25 13:40:44.966 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+logbak: 2019-07-25 13:40:44.966 o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1782 ms
+logbak: 2019-07-25 13:40:45.322 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+logbak: 2019-07-25 13:40:45.323 c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+logbak: 2019-07-25 13:40:46.426 o.s.b.a.orm.jpa.DatabaseLookup - Unable to determine jdbc url from datasource
+org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta-data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: The server time zone value 'ÖÐ¹ú±ê×¼Ê±¼ä' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:328)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:356)
+	at org.springframework.boot.autoconfigure.orm.jpa.DatabaseLookup.getDatabase(DatabaseLookup.java:73)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaProperties.determineDatabase(JpaProperties.java:142)
+	at org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration.jpaVendorAdapter(JpaBaseConfiguration.java:113)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$3c4f50a2.CGLIB$jpaVendorAdapter$4(<generated>)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$3c4f50a2$$FastClassBySpringCGLIB$$3b625bd.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363)
+	at org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration$$EnhancerBySpringCGLIB$$3c4f50a2.jpaVendorAdapter(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:509)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1305)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.lst.SellApplication.main(SellApplication.java:12)
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: The server time zone value 'ÖÐ¹ú±ê×¼Ê±¼ä' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:81)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:319)
+	... 62 common frames omitted
+Caused by: java.sql.SQLException: The server time zone value 'ÖÐ¹ú±ê×¼Ê±¼ä' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:76)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:835)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:136)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:369)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:198)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:467)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:541)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:157)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	... 63 common frames omitted
+Caused by: com.mysql.cj.exceptions.InvalidConnectionAttributeException: The server time zone value 'ÖÐ¹ú±ê×¼Ê±¼ä' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:85)
+	at com.mysql.cj.util.TimeUtil.getCanonicalTimezone(TimeUtil.java:132)
+	at com.mysql.cj.protocol.a.NativeProtocol.configureTimezone(NativeProtocol.java:2241)
+	at com.mysql.cj.protocol.a.NativeProtocol.initServerSession(NativeProtocol.java:2265)
+	at com.mysql.cj.jdbc.ConnectionImpl.initializePropsFromServer(ConnectionImpl.java:1319)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:966)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825)
+	... 76 common frames omitted
+logbak: 2019-07-25 13:40:46.438 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+logbak: 2019-07-25 13:40:46.439 c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+logbak: 2019-07-25 13:40:47.507 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+logbak: 2019-07-25 13:40:47.555 org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+logbak: 2019-07-25 13:40:47.556 org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+logbak: 2019-07-25 13:40:47.655 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+logbak: 2019-07-25 13:40:47.765 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+logbak: 2019-07-25 13:40:47.765 c.z.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+logbak: 2019-07-25 13:40:48.773 o.h.e.j.e.i.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata : The server time zone value 'ÖÐ¹ú±ê×¼Ê±¼ä' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+logbak: 2019-07-25 13:40:48.776 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+logbak: 2019-07-25 13:40:48.805 o.a.catalina.core.StandardService - Stopping service [Tomcat]
+logbak: 2019-07-25 13:40:48.824 o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+logbak: 2019-07-25 13:45:08.725 com.lst.SellApplication - Starting SellApplication on USER-20090702DC with PID 12432 (D:\sell\target\classes started by Administrator in D:\sell)
+logbak: 2019-07-25 13:45:08.747 com.lst.SellApplication - The following profiles are active: dev
+logbak: 2019-07-25 13:45:09.656 o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.lst]' package. Please check your configuration.
+logbak: 2019-07-25 13:45:09.731 o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+logbak: 2019-07-25 13:45:09.731 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+logbak: 2019-07-25 13:45:09.745 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+logbak: 2019-07-25 13:45:09.761 o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+logbak: 2019-07-25 13:45:09.762 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+logbak: 2019-07-25 13:45:09.773 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 1ms. Found 0 repository interfaces.
+logbak: 2019-07-25 13:45:10.034 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$aed6d50b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+logbak: 2019-07-25 13:45:10.288 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+logbak: 2019-07-25 13:45:10.300 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+logbak: 2019-07-25 13:45:10.308 o.a.catalina.core.StandardService - Starting service [Tomcat]
+logbak: 2019-07-25 13:45:10.308 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+logbak: 2019-07-25 13:45:10.314 o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\Java\jdk1.8.0_171\jre\bin;D:\Program Files\Git\cmd;D:\apache-maven-3.6.1\bin;D:\Program Files\nodejs\;D:\Program Files\erl9.3\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Administrator\AppData\Roaming\npm;.]
+logbak: 2019-07-25 13:45:10.441 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+logbak: 2019-07-25 13:45:10.441 o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1558 ms
+logbak: 2019-07-25 13:45:10.785 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+logbak: 2019-07-25 13:45:10.926 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+logbak: 2019-07-25 13:45:10.960 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+logbak: 2019-07-25 13:45:11.006 org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+logbak: 2019-07-25 13:45:11.007 org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+logbak: 2019-07-25 13:45:11.114 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+logbak: 2019-07-25 13:45:11.204 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+logbak: 2019-07-25 13:45:11.340 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+logbak: 2019-07-25 13:45:11.561 o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+logbak: 2019-07-25 13:45:11.602 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+logbak: 2019-07-25 13:45:11.790 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\sell\target\classes\mapper\ProductCategoryMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'cn.chenhaoxiang.dataObject.ProductCategory'.  Cause: java.lang.ClassNotFoundException: Cannot find class: cn.chenhaoxiang.dataObject.ProductCategory
+logbak: 2019-07-25 13:45:11.791 o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+logbak: 2019-07-25 13:45:11.791 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+logbak: 2019-07-25 13:45:11.794 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+logbak: 2019-07-25 13:45:11.804 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+logbak: 2019-07-25 13:45:11.816 o.a.catalina.core.StandardService - Stopping service [Tomcat]
+logbak: 2019-07-25 13:45:11.825 o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+logbak: 2019-07-25 13:53:12.520 com.lst.SellApplication - Starting SellApplication on USER-20090702DC with PID 10360 (D:\sell\target\classes started by Administrator in D:\sell)
+logbak: 2019-07-25 13:53:12.521 com.lst.SellApplication - The following profiles are active: dev
+logbak: 2019-07-25 13:53:13.264 o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.lst]' package. Please check your configuration.
+logbak: 2019-07-25 13:53:13.347 o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+logbak: 2019-07-25 13:53:13.347 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+logbak: 2019-07-25 13:53:13.361 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 6ms. Found 0 repository interfaces.
+logbak: 2019-07-25 13:53:13.374 o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+logbak: 2019-07-25 13:53:13.375 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+logbak: 2019-07-25 13:53:13.384 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 2ms. Found 0 repository interfaces.
+logbak: 2019-07-25 13:53:13.720 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d6b40132] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+logbak: 2019-07-25 13:53:13.984 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+logbak: 2019-07-25 13:53:13.998 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+logbak: 2019-07-25 13:53:14.008 o.a.catalina.core.StandardService - Starting service [Tomcat]
+logbak: 2019-07-25 13:53:14.008 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+logbak: 2019-07-25 13:53:14.031 o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\Java\jdk1.8.0_171\jre\bin;D:\Program Files\Git\cmd;D:\apache-maven-3.6.1\bin;D:\Program Files\nodejs\;D:\Program Files\erl9.3\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Administrator\AppData\Roaming\npm;.]
+logbak: 2019-07-25 13:53:14.139 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+logbak: 2019-07-25 13:53:14.139 o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1519 ms
+logbak: 2019-07-25 13:53:14.471 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+logbak: 2019-07-25 13:53:14.601 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+logbak: 2019-07-25 13:53:14.635 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+logbak: 2019-07-25 13:53:14.681 org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+logbak: 2019-07-25 13:53:14.682 org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+logbak: 2019-07-25 13:53:14.788 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+logbak: 2019-07-25 13:53:14.876 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+logbak: 2019-07-25 13:53:16.028 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+logbak: 2019-07-25 13:53:16.180 o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+logbak: 2019-07-25 13:53:16.207 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+logbak: 2019-07-25 13:53:16.749 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+logbak: 2019-07-25 13:53:16.778 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+logbak: 2019-07-25 13:53:16.780 com.lst.SellApplication - Started SellApplication in 4.741 seconds (JVM running for 5.55)
+logbak: 2019-07-25 14:52:21.651 com.lst.SellApplication - Starting SellApplication on USER-20090702DC with PID 12908 (D:\sell\target\classes started by Administrator in D:\sell)
+logbak: 2019-07-25 14:52:21.652 com.lst.SellApplication - The following profiles are active: dev
+logbak: 2019-07-25 14:52:22.874 o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+logbak: 2019-07-25 14:52:22.875 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+logbak: 2019-07-25 14:52:22.940 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59ms. Found 4 repository interfaces.
+logbak: 2019-07-25 14:52:22.975 o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+logbak: 2019-07-25 14:52:22.976 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+logbak: 2019-07-25 14:52:23.006 o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lst.dataObject.dao.OrderDetailDao.
+logbak: 2019-07-25 14:52:23.006 o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lst.dataObject.dao.OrderMasterDao.
+logbak: 2019-07-25 14:52:23.007 o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lst.dataObject.dao.ProductInfoDao.
+logbak: 2019-07-25 14:52:23.007 o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lst.dataObject.dao.SellerInfoDao.
+logbak: 2019-07-25 14:52:23.007 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 repository interfaces.
+logbak: 2019-07-25 14:52:23.464 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$580ed8a6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+logbak: 2019-07-25 14:52:23.854 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+logbak: 2019-07-25 14:52:23.866 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+logbak: 2019-07-25 14:52:23.874 o.a.catalina.core.StandardService - Starting service [Tomcat]
+logbak: 2019-07-25 14:52:23.875 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+logbak: 2019-07-25 14:52:23.880 o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\Java\jdk1.8.0_171\jre\bin;D:\Program Files\Git\cmd;D:\apache-maven-3.6.1\bin;D:\Program Files\nodejs\;D:\Program Files\erl9.3\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Administrator\AppData\Roaming\npm;.]
+logbak: 2019-07-25 14:52:23.985 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+logbak: 2019-07-25 14:52:23.985 o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2272 ms
+logbak: 2019-07-25 14:52:24.681 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+logbak: 2019-07-25 14:52:24.833 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+logbak: 2019-07-25 14:52:24.946 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+logbak: 2019-07-25 14:52:25.158 org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+logbak: 2019-07-25 14:52:25.161 org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+logbak: 2019-07-25 14:52:25.698 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+logbak: 2019-07-25 14:52:26.032 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+logbak: 2019-07-25 14:52:27.599 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+logbak: 2019-07-25 14:52:28.652 o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+logbak: 2019-07-25 14:52:28.866 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+logbak: 2019-07-25 14:52:29.477 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+logbak: 2019-07-25 14:52:29.506 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+logbak: 2019-07-25 14:52:29.507 com.lst.SellApplication - Started SellApplication in 8.866 seconds (JVM running for 11.283)
+logbak: 2019-07-25 16:16:23.155 com.lst.SellApplication - Starting SellApplication on USER-20090702DC with PID 12660 (D:\sell\target\classes started by Administrator in D:\sell)
+logbak: 2019-07-25 16:16:23.171 com.lst.SellApplication - The following profiles are active: dev
+logbak: 2019-07-25 16:16:24.978 o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+logbak: 2019-07-25 16:16:24.978 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+logbak: 2019-07-25 16:16:25.102 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 102ms. Found 5 repository interfaces.
+logbak: 2019-07-25 16:16:25.123 o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+logbak: 2019-07-25 16:16:25.124 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+logbak: 2019-07-25 16:16:25.182 o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lst.dao.OrderDetailDao.
+logbak: 2019-07-25 16:16:25.185 o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lst.dao.OrderMasterDao.
+logbak: 2019-07-25 16:16:25.188 o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lst.dao.ProductCategoryDao.
+logbak: 2019-07-25 16:16:25.189 o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lst.dao.ProductInfoDao.
+logbak: 2019-07-25 16:16:25.190 o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lst.dao.SellerInfoDao.
+logbak: 2019-07-25 16:16:25.190 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27ms. Found 0 repository interfaces.
+logbak: 2019-07-25 16:16:25.562 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$bf5ea8d4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+logbak: 2019-07-25 16:16:25.921 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+logbak: 2019-07-25 16:16:25.933 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+logbak: 2019-07-25 16:16:25.941 o.a.catalina.core.StandardService - Starting service [Tomcat]
+logbak: 2019-07-25 16:16:25.941 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+logbak: 2019-07-25 16:16:25.947 o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\Java\jdk1.8.0_171\jre\bin;D:\Program Files\Git\cmd;D:\apache-maven-3.6.1\bin;D:\Program Files\nodejs\;D:\Program Files\erl9.3\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Administrator\AppData\Roaming\npm;.]
+logbak: 2019-07-25 16:16:26.151 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+logbak: 2019-07-25 16:16:26.152 o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2929 ms
+logbak: 2019-07-25 16:16:27.251 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+logbak: 2019-07-25 16:16:27.720 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+logbak: 2019-07-25 16:16:27.873 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+logbak: 2019-07-25 16:16:28.081 org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+logbak: 2019-07-25 16:16:28.084 org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+logbak: 2019-07-25 16:16:28.562 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+logbak: 2019-07-25 16:16:28.899 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+logbak: 2019-07-25 16:16:31.028 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+logbak: 2019-07-25 16:16:31.034 o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.boot.context.properties.ConfigurationPropertiesBindException: Error creating bean with name 'projectUrlConfig': Could not bind properties to 'ProjectUrlConfig' : prefix=projectUrl, ignoreInvalidFields=false, ignoreUnknownFields=true; nested exception is org.springframework.boot.context.properties.source.InvalidConfigurationPropertyNameException: Configuration property name 'projectUrl' is not valid
+logbak: 2019-07-25 16:16:31.034 o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+logbak: 2019-07-25 16:16:31.037 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+logbak: 2019-07-25 16:16:31.045 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+logbak: 2019-07-25 16:16:31.090 o.a.catalina.core.StandardService - Stopping service [Tomcat]
+logbak: 2019-07-25 16:16:31.114 o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+logbak: 2019-07-25 16:24:12.625 com.lst.SellApplication - Starting SellApplication on USER-20090702DC with PID 7828 (D:\sell\target\classes started by Administrator in D:\sell)
+logbak: 2019-07-25 16:24:12.628 com.lst.SellApplication - The following profiles are active: dev
+logbak: 2019-07-25 16:24:13.590 o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+logbak: 2019-07-25 16:24:13.591 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+logbak: 2019-07-25 16:24:13.684 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 84ms. Found 5 repository interfaces.
+logbak: 2019-07-25 16:24:13.695 o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+logbak: 2019-07-25 16:24:13.696 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+logbak: 2019-07-25 16:24:13.714 o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lst.dao.OrderDetailDao.
+logbak: 2019-07-25 16:24:13.714 o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lst.dao.OrderMasterDao.
+logbak: 2019-07-25 16:24:13.715 o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lst.dao.ProductCategoryDao.
+logbak: 2019-07-25 16:24:13.716 o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lst.dao.ProductInfoDao.
+logbak: 2019-07-25 16:24:13.716 o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lst.dao.SellerInfoDao.
+logbak: 2019-07-25 16:24:13.716 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+logbak: 2019-07-25 16:24:14.029 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$daf4e3f2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+logbak: 2019-07-25 16:24:14.273 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+logbak: 2019-07-25 16:24:14.284 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+logbak: 2019-07-25 16:24:14.291 o.a.catalina.core.StandardService - Starting service [Tomcat]
+logbak: 2019-07-25 16:24:14.291 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+logbak: 2019-07-25 16:24:14.296 o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\Java\jdk1.8.0_171\jre\bin;D:\Program Files\Git\cmd;D:\apache-maven-3.6.1\bin;D:\Program Files\nodejs\;D:\Program Files\erl9.3\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Administrator\AppData\Roaming\npm;.]
+logbak: 2019-07-25 16:24:14.497 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+logbak: 2019-07-25 16:24:14.498 o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1836 ms
+logbak: 2019-07-25 16:24:14.819 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+logbak: 2019-07-25 16:24:14.974 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+logbak: 2019-07-25 16:24:15.018 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+logbak: 2019-07-25 16:24:15.086 org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+logbak: 2019-07-25 16:24:15.088 org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+logbak: 2019-07-25 16:24:15.197 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+logbak: 2019-07-25 16:24:15.304 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+logbak: 2019-07-25 16:24:15.815 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+logbak: 2019-07-25 16:24:17.766 o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+logbak: 2019-07-25 16:24:17.800 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+logbak: 2019-07-25 16:24:18.429 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+logbak: 2019-07-25 16:24:18.464 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+logbak: 2019-07-25 16:24:18.465 com.lst.SellApplication - Started SellApplication in 6.338 seconds (JVM running for 6.987)
+logbak: 2019-07-25 16:25:05.725 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+logbak: 2019-07-25 16:25:05.726 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+logbak: 2019-07-25 16:25:05.754 o.s.web.servlet.DispatcherServlet - Completed initialization in 28 ms
+logbak: 2019-07-25 16:35:49.801 com.lst.SellApplication - Starting SellApplication on USER-20090702DC with PID 8888 (D:\sell\target\classes started by Administrator in D:\sell)
+logbak: 2019-07-25 16:35:49.803 com.lst.SellApplication - The following profiles are active: dev
+logbak: 2019-07-25 16:35:50.710 o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+logbak: 2019-07-25 16:35:50.710 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+logbak: 2019-07-25 16:35:50.784 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 67ms. Found 5 repository interfaces.
+logbak: 2019-07-25 16:35:50.794 o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+logbak: 2019-07-25 16:35:50.795 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+logbak: 2019-07-25 16:35:50.808 o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lst.dao.OrderDetailDao.
+logbak: 2019-07-25 16:35:50.809 o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lst.dao.OrderMasterDao.
+logbak: 2019-07-25 16:35:50.810 o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lst.dao.ProductCategoryDao.
+logbak: 2019-07-25 16:35:50.810 o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lst.dao.ProductInfoDao.
+logbak: 2019-07-25 16:35:50.811 o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lst.dao.SellerInfoDao.
+logbak: 2019-07-25 16:35:50.811 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.
+logbak: 2019-07-25 16:35:51.092 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d722f2bf] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+logbak: 2019-07-25 16:35:51.350 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+logbak: 2019-07-25 16:35:51.361 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+logbak: 2019-07-25 16:35:51.368 o.a.catalina.core.StandardService - Starting service [Tomcat]
+logbak: 2019-07-25 16:35:51.369 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+logbak: 2019-07-25 16:35:51.374 o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\Java\jdk1.8.0_171\jre\bin;D:\Program Files\Git\cmd;D:\apache-maven-3.6.1\bin;D:\Program Files\nodejs\;D:\Program Files\erl9.3\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Administrator\AppData\Roaming\npm;.]
+logbak: 2019-07-25 16:35:51.551 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+logbak: 2019-07-25 16:35:51.551 o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1716 ms
+logbak: 2019-07-25 16:35:51.842 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+logbak: 2019-07-25 16:35:51.975 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+logbak: 2019-07-25 16:35:52.015 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+logbak: 2019-07-25 16:35:52.066 org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+logbak: 2019-07-25 16:35:52.068 org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+logbak: 2019-07-25 16:35:52.178 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+logbak: 2019-07-25 16:35:52.290 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+logbak: 2019-07-25 16:35:52.804 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+logbak: 2019-07-25 16:35:53.866 o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+logbak: 2019-07-25 16:35:53.896 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+logbak: 2019-07-25 16:35:54.183 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+logbak: 2019-07-25 16:35:54.206 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+logbak: 2019-07-25 16:35:54.208 com.lst.SellApplication - Started SellApplication in 4.936 seconds (JVM running for 5.585)
+logbak: 2019-07-25 16:36:01.647 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+logbak: 2019-07-25 16:36:01.647 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+logbak: 2019-07-25 16:36:01.654 o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+logbak: 2019-07-25 16:40:49.737 com.lst.SellApplication - Starting SellApplication on USER-20090702DC with PID 12292 (D:\sell\target\classes started by Administrator in D:\sell)
+logbak: 2019-07-25 16:40:49.739 com.lst.SellApplication - The following profiles are active: dev
+logbak: 2019-07-25 16:40:50.600 o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+logbak: 2019-07-25 16:40:50.600 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+logbak: 2019-07-25 16:40:50.670 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 64ms. Found 5 repository interfaces.
+logbak: 2019-07-25 16:40:50.681 o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+logbak: 2019-07-25 16:40:50.682 o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+logbak: 2019-07-25 16:40:50.706 o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lst.dao.OrderDetailDao.
+logbak: 2019-07-25 16:40:50.707 o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lst.dao.OrderMasterDao.
+logbak: 2019-07-25 16:40:50.708 o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lst.dao.ProductCategoryDao.
+logbak: 2019-07-25 16:40:50.708 o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lst.dao.ProductInfoDao.
+logbak: 2019-07-25 16:40:50.709 o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.lst.dao.SellerInfoDao.
+logbak: 2019-07-25 16:40:50.709 o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.
+logbak: 2019-07-25 16:40:50.976 o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9f23ae99] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+logbak: 2019-07-25 16:40:51.279 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+logbak: 2019-07-25 16:40:51.291 o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+logbak: 2019-07-25 16:40:51.298 o.a.catalina.core.StandardService - Starting service [Tomcat]
+logbak: 2019-07-25 16:40:51.298 o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.16]
+logbak: 2019-07-25 16:40:51.303 o.a.c.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_171\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_171\bin;C:\Program Files\Java\jdk1.8.0_171\jre\bin;D:\Program Files\Git\cmd;D:\apache-maven-3.6.1\bin;D:\Program Files\nodejs\;D:\Program Files\erl9.3\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Administrator\AppData\Roaming\npm;.]
+logbak: 2019-07-25 16:40:51.491 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+logbak: 2019-07-25 16:40:51.492 o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1684 ms
+logbak: 2019-07-25 16:40:51.820 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+logbak: 2019-07-25 16:40:51.956 com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+logbak: 2019-07-25 16:40:51.997 o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+logbak: 2019-07-25 16:40:52.046 org.hibernate.Version - HHH000412: Hibernate Core {5.3.7.Final}
+logbak: 2019-07-25 16:40:52.048 org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+logbak: 2019-07-25 16:40:52.175 o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+logbak: 2019-07-25 16:40:52.283 org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+logbak: 2019-07-25 16:40:52.804 o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+logbak: 2019-07-25 16:40:53.844 o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+logbak: 2019-07-25 16:40:53.873 o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+logbak: 2019-07-25 16:40:54.161 o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+logbak: 2019-07-25 16:40:54.184 o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+logbak: 2019-07-25 16:40:54.185 com.lst.SellApplication - Started SellApplication in 5.144 seconds (JVM running for 5.774)
+logbak: 2019-07-25 16:41:06.224 o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+logbak: 2019-07-25 16:41:06.224 o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+logbak: 2019-07-25 16:41:06.232 o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+logbak: 2019-07-25 16:51:02.681 o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'openid' is not present]
+logbak: 2019-07-25 16:51:05.246 o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'openid' is not present]
+logbak: 2019-07-25 16:55:54.993 o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+logbak: 2019-07-25 17:15:02.771 io.lettuce.core.EpollProvider - Starting without optional epoll library
+logbak: 2019-07-25 17:15:02.772 io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+logbak: 2019-07-25 17:26:22.125 com.lst.controller.PayController - openid=wxd898fcb01713c658,orderId=1516539154906548294.returnUrl=https://blog.csdn.net/qq_26525215/article/details/79182687,
+logbak: 2019-07-25 17:31:32.130 com.lst.controller.PayController - openid=wxd898fcb01713c658,orderId=1516539154906548294.returnUrl=https://blog.csdn.net/qq_26525215/article/details/79182687,
+logbak: 2019-07-25 17:31:32.175 com.lst.service.impl.PayServiceImpl - [微信支付] 发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1516539154906548294",
+  "orderAmount": 1000.0,
+  "orderName": "微信点餐订单",
+  "openid": "1516539154906548294"
+}
+logbak: 2019-07-25 17:33:41.992 com.lst.controller.PayController - openid=wxd898fcb01713c658,orderId=1516539154906548294.returnUrl=https://blog.csdn.net/qq_26525215/article/details/79182687,
+logbak: 2019-07-25 17:33:42.014 com.lst.service.impl.PayServiceImpl - [微信支付] 发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1516539154906548294",
+  "orderAmount": 1000.0,
+  "orderName": "微信点餐订单",
+  "openid": "1516539154906548294"
+}
+logbak: 2019-07-25 17:34:50.433 com.lst.controller.PayController - openid=wxd898fcb01713c658,orderId=1516539154906548294.returnUrl=https://blog.csdn.net/qq_26525215/article/details/79182687,
+logbak: 2019-07-25 17:34:50.443 com.lst.service.impl.PayServiceImpl - [微信支付] 发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1516539154906548294",
+  "orderAmount": 1000.0,
+  "orderName": "微信点餐订单",
+  "openid": "1516539154906548294"
+}
+logbak: 2019-07-25 17:39:49.953 com.lst.controller.PayController - openid=wxd898fcb01713c658,orderId=1516539154906548294.returnUrl=https://blog.csdn.net/qq_26525215/article/details/79182687,
+logbak: 2019-07-25 17:39:49.976 com.lst.service.impl.PayServiceImpl - [微信支付] 发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1516539154906548294",
+  "orderAmount": 2000.0,
+  "orderName": "微信点餐订单",
+  "openid": "1516539154906548294"
+}
+logbak: 2019-07-25 17:39:53.242 com.lst.controller.PayController - openid=wxd898fcb01713c658,orderId=1516539154906548294.returnUrl=https://blog.csdn.net/qq_26525215/article/details/79182687,
+logbak: 2019-07-25 17:39:53.262 com.lst.service.impl.PayServiceImpl - [微信支付] 发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1516539154906548294",
+  "orderAmount": 2000.0,
+  "orderName": "微信点餐订单",
+  "openid": "1516539154906548294"
+}
+logbak: 2019-07-25 17:40:06.949 com.lst.controller.PayController - openid=wxd898fcb01713c658,orderId=1516539154906548294.returnUrl=https://blog.csdn.net/qq_26525215/article/details/79182687,
+logbak: 2019-07-25 17:40:06.969 com.lst.service.impl.PayServiceImpl - [微信支付] 发起支付，request={
+  "payTypeEnum": "WXPAY_H5",
+  "orderId": "1516539154906548294",
+  "orderAmount": 2000.0,
+  "orderName": "微信点餐订单",
+  "openid": "1516539154906548294"
+}
